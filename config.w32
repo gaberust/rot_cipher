@@ -1,0 +1,7 @@
+ARG_ENABLE('rot_cipher', 'rot_cipher support', 'no');
+
+if (PHP_ROT_CIPHER != 'no') {
+	AC_DEFINE('HAVE_ROT_CIPHER', 1, 'rot_cipher support enabled');
+
+	EXTENSION('rot_cipher', 'rot_cipher.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}
