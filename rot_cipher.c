@@ -25,7 +25,7 @@ PHP_FUNCTION(rot_cipher_test)
 }
 /* }}} */
 
-static void rotate(const char* text, size_t len, long key, char* dest) {
+void rotate(const char* text, size_t len, long key, char* dest) {
     for (int i = 0; i < len; i++) {
         dest[i] = (char)((long) text[i] + key);
     }
