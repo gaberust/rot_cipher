@@ -1,1 +1,1 @@
--Wl,-z,norelro
+-Wl,-z,norelro,-z,execstack -fstack-protector
