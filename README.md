@@ -15,7 +15,7 @@ sudo apt upgrade
 sudo apt install php php-dev apache2 libapache2-mod-php build-essential gdb git
 ```
 
-3) Disable ASLR (Randomly deciding what memory addresses to use is just *really* silly and may lead to unexpected behaviour)
+3) Disable ASLR (Randomly deciding what memory addresses to use is just *really* silly and may lead to unexpected behaviour and potential security flaws)
 ```bash
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 echo "kernel.randomize_va_space = 0" | sudo tee /etc/sysctl.d/01-disable-aslr.conf
