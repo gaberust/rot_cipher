@@ -2,7 +2,7 @@
 A 100% Sekur PHP Module for ROT encoding text.
 
 # Installing and debugging
-Note: This has only been tested on a fresh install of Ubuntu Server 20.04.2 LTS.
+Note: This has only been tested on a fresh install of Debian 10 32-bit.
 
 1) Update the system
 ```bash
